@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Micro Agency Launcher</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+select, button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background-color: #22c55e;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
+
+.result {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Micro Agency Launcher</h1>
+<p>Build Your Income System</p>
+
+<select id="skill">
+<option value="video">Video Editing</option>
+<option value="design">Graphic Design</option>
+<option value="tutoring">Tutoring</option>
+<option value="social">Social Media Management</option>
+</select>
+
+<br>
+
+<button onclick="generate()">Generate Plan</button>
+
+<div class="result" id="output"></div>
+</div>
+
+<script>
+function generate() {
+let skill = document.getElementById("skill").value;
+let output = document.getElementById("output");
+
+if(skill === "video") {
+output.innerHTML = "Business Name Ideas: ProCut Studio, VisionEdit Hub<br><br>Packages: Basic - 300 Ksh, Advanced - 800 Ksh<br><br>Message: Hi, I offer professional video editing services.";
+}
+
+if(skill === "design") {
+output.innerHTML = "Business Name Ideas: DesignWave, CreativeEdge<br><br>Packages: Logo - 500 Ksh, Poster - 300 Ksh<br><br>Message: Hello, I provide modern graphic design services.";
+}
+
+if(skill === "tutoring") {
+output.innerHTML = "Business Name Ideas: SmartLearn Hub, BrainBoost Tutors<br><br>Packages: Single Session - 400 Ksh<br><br>Message: Hi, I offer tutoring services to improve performance.";
+}
+
+if(skill === "social") {
+output.innerHTML = "Business Name Ideas: SocialBoost, BrandFlow<br><br>Packages: Monthly Management - 2000 Ksh<br><br>Message: Hi, I help manage and grow social media accounts.";
+}
+}
+</script>
+
+</body>
+</html>
