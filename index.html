@@ -1,151 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Micro Agency Launcher | Brian Muiruri</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickRyan Biz</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+  /* Banner Section */
+  .banner {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1581091012184-2f09c45b45b5?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
 
-        body {
-            background: #f4f6f9;
-            color: #333;
-        }
+  /* Overlay for readability */
+  .banner-content {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+  }
 
-        header {
-            background: linear-gradient(135deg, #111, #e10600);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+  .banner h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
+  .banner p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
 
-        header p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            background: white;
-            color: #e10600;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
+  .whatsapp-btn:hover {
+    background-color: #1ebe5b;
+  }
 
-        .btn:hover {
-            background: #ddd;
-        }
-
-        section {
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #e10600;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            width: 260px;
-            border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  @media (max-width: 600px) {
+    .banner h1 { font-size: 1.5em; }
+    .banner p { font-size: 1em; }
+  }
+</style>
 </head>
-
 <body>
 
-<header>
+<div class="banner">
+  <div class="banner-content">
     <h1>We Help Small Businesses Get More Customers Online</h1>
     <p>Affordable websites. Fast delivery. Professional design.</p>
-    <a href="https://wa.me/254769712311" class="btn">Chat on WhatsApp</a>
-</header>
-
-<section>
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Website Design</h3>
-            <p>Modern, responsive websites for your business.</p>
-        </div>
-        <div class="card">
-            <h3>Landing Pages</h3>
-            <p>High-converting pages that bring more customers.</p>
-        </div>
-        <div class="card">
-            <h3>Social Media Marketing</h3>
-            <p>Grow your audience and boost brand visibility.</p>
-        </div>
-        <div class="card">
-            <h3>Business Branding</h3>
-            <p>Logos, visuals and complete brand identity.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Why Choose Us?</h2>
-    <p>We focus on results. Clean design. Fast performance. Real growth.</p>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:brianmuiruri372@gmail.com">brianmuiruri372@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/254769712311">+254769712311</a></p>
-</section>
-
-<footer>
-    <p>© 2026 Micro Agency Launcher | Built by Brian Muiruri</p>
-</footer>
+    <a href="https://wa.me/254769712311" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+  </div>
+</div>
 
 </body>
 </html>
-
