@@ -1,132 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuickRyan Biz | Helping Businesses Grow Online</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
-      color: #1E3A8A;
-    }
-    header {
-      background-color: #7C3AED;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-    header img {
-      max-width: 150px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 20px;
-    }
-    header button {
-      padding: 15px 30px;
-      font-size: 1em;
-      background-color: #1E3A8A;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 30px;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-    .service {
-      max-width: 200px;
-    }
-    .service img {
-      max-width: 80px;
-      margin-bottom: 15px;
-    }
-    .pricing p, .contact p {
-      font-size: 1.1em;
-      margin: 5px 0;
-    }
-    footer {
-      background-color: #1E3A8A;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickRyan Biz | Grow Your Business</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; font-family:'Poppins', sans-serif; background:#f5f5f5; color:#333; }
+  header { background:#7C3AED; color:white; text-align:center; padding:60px 20px; }
+  header img { max-width:180px; margin-bottom:20px; }
+  header h1 { font-size:3em; margin:0 0 10px; }
+  header p { font-size:1.2em; margin:0 0 20px; }
+  header a.button { background:#1E3A8A; color:white; padding:15px 30px; text-decoration:none; border-radius:5px; font-weight:600; display:inline-block; }
+  section { padding:50px 20px; text-align:center; }
+  section h2 { font-size:2em; margin-bottom:30px; color:#1E3A8A; }
+  .services { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+  .service { background:white; border-radius:10px; padding:30px 20px; max-width:220px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+  .service:hover { transform: translateY(-5px); }
+  .service img { max-width:80px; margin-bottom:15px; }
+  .service p { font-size:1.1em; margin:0; }
+  .pricing { display:flex; justify-content:center; gap:30px; flex-wrap:wrap; }
+  .price-box { background:white; border-radius:10px; padding:30px 20px; max-width:220px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+  #contact p { font-size:1.2em; margin:10px 0; }
+  footer { background:#1E3A8A; color:white; text-align:center; padding:20px; font-size:0.9em; }
+</style>
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <header>
-    <img src="quickryan-logo.png" alt="QuickRyan Biz Logo">
-    <h1>QuickRyan Biz</h1>
-    <p>Helping small businesses grow online</p>
-    <button onclick="window.location.href='#contact'">Get Your Website</button>
-  </header>
+<header>
+  <img src="quickryan-logo.png" alt="QuickRyan Biz Logo">
+  <h1>QuickRyan Biz</h1>
+  <p>We make your business visible online — easily & fast!</p>
+  <a class="button" href="https://wa.me/254769712311" target="_blank">Message on WhatsApp</a>
+</header>
 
-  <!-- SERVICES SECTION -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <img src="https://img.icons8.com/color/96/000000/website.png" alt="Website Icon">
-        <p>Business Websites</p>
-      </div>
-      <div class="service">
-        <img src="https://img.icons8.com/color/96/000000/landing-page.png" alt="Landing Page Icon">
-        <p>Landing Pages</p>
-      </div>
-      <div class="service">
-        <img src="https://img.icons8.com/color/96/000000/refresh.png" alt="Redesign Icon">
-        <p>Website Redesign</p>
-      </div>
-      <div class="service">
-        <img src="https://img.icons8.com/color/96/000000/business.png" alt="Profile Icon">
-        <p>Business Profiles Online</p>
-      </div>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <img src="https://img.icons8.com/color/96/000000/laptop.png" alt="Business Website">
+      <p>Business Websites</p>
     </div>
-  </section>
+    <div class="service">
+      <img src="https://img.icons8.com/color/96/000000/phone.png" alt="Landing Page">
+      <p>Landing Pages</p>
+    </div>
+    <div class="service">
+      <img src="https://img.icons8.com/color/96/000000/social-media.png" alt="Social Media">
+      <p>Social Media Setup</p>
+    </div>
+  </div>
+</section>
 
-  <!-- PRICING SECTION -->
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p>Starter Website — KSh 3,000</p>
-    <p>Business Website — KSh 5,000</p>
-    <p>Advanced Website — KSh 8,000</p>
-  </section>
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <div class="price-box">
+      <p><strong>Starter Website</strong></p>
+      <p>KSh 3,000</p>
+    </div>
+    <div class="price-box">
+      <p><strong>Business Website</strong></p>
+      <p>KSh 5,000</p>
+    </div>
+    <div class="price-box">
+      <p><strong>Advanced Website</strong></p>
+      <p>KSh 8,000</p>
+    </div>
+  </div>
+</section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h2>Contact QuickRyan Biz</h2>
-    <p>WhatsApp: +254769712311</p>
-    <p>Email: brianmuiruri372@gmail.com</p>
-    <p>Ready to grow your business online? Let's start today!</p>
-  </section>
+<section id="contact">
+  <h2>Contact QuickRyan Biz</h2>
+  <p>WhatsApp: <a href="https://wa.me/254769712311" target="_blank">+254 769 712 311</a></p>
+  <p>Email: <a href="mailto:brianmuiruri372@gmail.com">brianmuiruri372@gmail.com</a></p>
+  <p>Let's get your business online today!</p>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 QuickRyan Biz</p>
-    <p>Helping small businesses grow online</p>
-  </footer>
+<footer>
+  © 2026 QuickRyan Biz — Helping small businesses grow online
+</footer>
 
 </body>
 </html>
