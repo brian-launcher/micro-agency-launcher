@@ -9,12 +9,12 @@
   body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Poppins', sans-serif;
   }
 
+  /* Banner Section */
   .banner {
-    height: 100vh;
+    height: 60vh;
     background: url('laptop-bg.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -26,9 +26,9 @@
 
   .banner-content {
     background: rgba(0,0,0,0.6);
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
-    max-width: 600px;
+    max-width: 700px;
   }
 
   .banner h1 {
@@ -38,7 +38,7 @@
 
   .banner p {
     font-size: 1.2em;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .whatsapp-btn {
@@ -56,14 +56,57 @@
     background-color: #1ebe5b;
   }
 
+  /* Services Section */
+  .services {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .services h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .service-item {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+  }
+
+  /* Contact Section */
+  .contact {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .contact p {
+    font-size: 1.1em;
+    margin: 8px 0;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
   @media (max-width: 600px) {
     .banner h1 { font-size: 1.5em; }
     .banner p { font-size: 1em; }
+    .services h2, .contact h2 { font-size: 1.5em; }
   }
 </style>
 </head>
 <body>
 
+<!-- Banner -->
 <div class="banner">
   <div class="banner-content">
     <h1>We Help Small Businesses Get More Customers Online</h1>
@@ -71,6 +114,27 @@
     <a href="https://wa.me/254769712311" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
   </div>
 </div>
+
+<!-- Services Section -->
+<div class="services">
+  <h2>Our Services</h2>
+  <div class="service-item">Business Websites</div>
+  <div class="service-item">Landing Pages</div>
+  <div class="service-item">Website Redesign</div>
+  <div class="service-item">Business Profiles Online</div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact">
+  <h2>Contact QuickRyan Biz</h2>
+  <p>WhatsApp: +254769712311</p>
+  <p>Email: brianmuiruri372@gmail.com</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  © 2026 QuickRyan Biz — Helping small businesses grow online
+</footer>
 
 </body>
 </html>
