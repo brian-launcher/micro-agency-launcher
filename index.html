@@ -16,19 +16,22 @@
     header {
       background-color: #7C3AED;
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 20px;
     }
     header h1 {
       font-size: 2.5em;
-      margin: 0;
+      margin: 10px 0;
     }
     header p {
       font-size: 1.2em;
-      margin: 10px 0 0;
+      margin: 10px 0 20px;
     }
     header button {
-      margin-top: 20px;
       padding: 15px 30px;
       font-size: 1em;
       background-color: #1E3A8A;
@@ -43,17 +46,22 @@
     }
     section h2 {
       font-size: 2em;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
     }
-    li {
-      font-size: 1.2em;
-      margin: 10px 0;
+    .service {
+      max-width: 200px;
     }
-    .pricing p {
+    .service img {
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+    .pricing p, .contact p {
       font-size: 1.1em;
       margin: 5px 0;
     }
@@ -63,15 +71,13 @@
       padding: 20px;
       text-align: center;
     }
-    footer p {
-      margin: 5px 0;
-    }
   </style>
 </head>
 <body>
 
   <!-- HERO SECTION -->
   <header>
+    <img src="quickryan-logo.png" alt="QuickRyan Biz Logo">
     <h1>QuickRyan Biz</h1>
     <p>Helping small businesses grow online</p>
     <button onclick="window.location.href='#contact'">Get Your Website</button>
@@ -80,16 +86,28 @@
   <!-- SERVICES SECTION -->
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Business Websites</li>
-      <li>Landing Pages</li>
-      <li>Website Redesign</li>
-      <li>Online Business Profiles</li>
-    </ul>
+    <div class="services">
+      <div class="service">
+        <img src="https://img.icons8.com/color/96/000000/website.png" alt="Website Icon">
+        <p>Business Websites</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/color/96/000000/landing-page.png" alt="Landing Page Icon">
+        <p>Landing Pages</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/color/96/000000/refresh.png" alt="Redesign Icon">
+        <p>Website Redesign</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/color/96/000000/business.png" alt="Profile Icon">
+        <p>Business Profiles Online</p>
+      </div>
+    </div>
   </section>
 
   <!-- PRICING SECTION -->
-  <section id="pricing" class="pricing">
+  <section id="pricing">
     <h2>Pricing</h2>
     <p>Starter Website — KSh 3,000</p>
     <p>Business Website — KSh 5,000</p>
@@ -99,9 +117,9 @@
   <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Contact QuickRyan Biz</h2>
-    <p>Want a website for your business? Reach out today!</p>
     <p>WhatsApp: +254769712311</p>
     <p>Email: brianmuiruri372@gmail.com</p>
+    <p>Ready to grow your business online? Let's start today!</p>
   </section>
 
   <!-- FOOTER -->
