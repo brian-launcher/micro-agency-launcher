@@ -1,150 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Micro Agency Launcher | Brian Muiruri</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: #f4f6f9;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #111, #e10600);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            background: white;
-            color: #e10600;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #ddd;
-        }
-
-        section {
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #e10600;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            width: 260px;
-            border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickRyan Biz | Helping Businesses Grow Online</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #1E3A8A;
+    }
+    header {
+      background-color: #7C3AED;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+    header button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1em;
+      background-color: #1E3A8A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .pricing p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+    footer {
+      background-color: #1E3A8A;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <h1>We Help Small Businesses Get More Customers Online</h1>
-    <p>Affordable websites. Fast delivery. Professional design.</p>
-    <a href="https://wa.me/254769712311" class="btn">Chat on WhatsApp</a>
-</header>
+  <!-- HERO SECTION -->
+  <header>
+    <h1>QuickRyan Biz</h1>
+    <p>Helping small businesses grow online</p>
+    <button onclick="window.location.href='#contact'">Get Your Website</button>
+  </header>
 
-<section>
+  <!-- SERVICES SECTION -->
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Website Design</h3>
-            <p>Modern, responsive websites for your business.</p>
-        </div>
-        <div class="card">
-            <h3>Landing Pages</h3>
-            <p>High-converting pages that bring more customers.</p>
-        </div>
-        <div class="card">
-            <h3>Social Media Marketing</h3>
-            <p>Grow your audience and boost brand visibility.</p>
-        </div>
-        <div class="card">
-            <h3>Business Branding</h3>
-            <p>Logos, visuals and complete brand identity.</p>
-        </div>
-    </div>
-</section>
+    <ul>
+      <li>Business Websites</li>
+      <li>Landing Pages</li>
+      <li>Website Redesign</li>
+      <li>Online Business Profiles</li>
+    </ul>
+  </section>
 
-<section>
-    <h2>Why Choose Us?</h2>
-    <p>We focus on results. Clean design. Fast performance. Real growth.</p>
-</section>
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <p>Starter Website — KSh 3,000</p>
+    <p>Business Website — KSh 5,000</p>
+    <p>Advanced Website — KSh 8,000</p>
+  </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:brianmuiruri372@gmail.com">brianmuiruri372@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/254769712311">+254769712311</a></p>
-</section>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact QuickRyan Biz</h2>
+    <p>Want a website for your business? Reach out today!</p>
+    <p>WhatsApp: +254769712311</p>
+    <p>Email: brianmuiruri372@gmail.com</p>
+  </section>
 
-<footer>
-    <p>© 2026 Micro Agency Launcher | Built by Brian Muiruri</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 QuickRyan Biz</p>
+    <p>Helping small businesses grow online</p>
+  </footer>
 
 </body>
 </html>
